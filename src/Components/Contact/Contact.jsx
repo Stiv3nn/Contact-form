@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './Contact.css'
+// IMPORTO SWEETALERT2
+import Swal from 'sweetalert2'
 
 const Contact = () => {
     const [success, setSuccess] = useState(false);
@@ -26,9 +28,15 @@ const Contact = () => {
             const data = await res.json();
 
             if (data.success) {
-                console.log("Success", data);
-                setSuccess(true);
-                event.target.reset();
+                // console.log("Success", data);
+                // setSuccess(true);
+                // event.target.reset();
+
+                Swal.fire({
+                    title: "Success!!",
+                    text: "Message sent successfully!",
+                    icon: "success"
+                });
             } else {
                 console.log("Submission error", data);
                 setSuccess(false);
