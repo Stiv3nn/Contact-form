@@ -51,7 +51,7 @@ const Contact = () => {
         <section className='contact'>
             <form onSubmit={onSubmit}>
                 {/* TITOLO */}
-                <h2>Contact Form</h2>
+                <h2>Contact Me</h2>
 
                 {/* BOX DEL NOME */}
                 <div className="input-box">
