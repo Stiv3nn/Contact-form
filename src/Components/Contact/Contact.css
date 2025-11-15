@@ -38,6 +38,24 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     color: #333;
     margin: 25px;
+    /* FA FLUTTUARE IL FORM CONTINUAMENTE SU E GIù */
+    animation: float 3s ease-in-out infinite;
+    transition: animation 0.3s ease;
+}
+
+/* FERMA L'ANIMAZIONE AL PASSAGGIO DEL CURSORE */
+form:hover {
+    animation-play-state: paused;
+}
+
+/* L'ANIMAZIONE SPOSTA IL FORM DI 20PX VERSO L'ALTO AL CENTRO DEL CICLO, POI TORNA A 0 */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 form h2 {
