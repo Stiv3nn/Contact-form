@@ -21,11 +21,11 @@
 
     0%,
     100% {
-        background-color: #0a0f24;
+        background-color: #000000;
     }
 
     50% {
-        background-color: #1b3b73;
+        background-color: #051602;
     }
 }
 
@@ -42,6 +42,7 @@ form {
 
 form h2 {
     font-size: 30px;
+    letter-spacing: 2px;
     text-align: center;
     font-family: Noto Sans;
 }
@@ -55,15 +56,16 @@ form .input-box {
     width: 100%;
     height: 50px;
     background: transparent;
-    border: 2px solid #ddd;
+    border: 2px solid #dddddd;
     outline: none;
     border-radius: 20px;
     padding: 15px;
     font-size: 16px;
-    color: #333;
+    color: #535353;
     margin-top: 8px;
     font-family: Noto Sans;
 }
+
 
 .input-box .field.mess {
     height: 200px;
@@ -73,9 +75,9 @@ form .input-box {
 form button {
     width: 100%;
     height: 55px;
-    background: rgb(44, 84, 171);
+    background: rgb(0, 0, 0);
     border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 15px rgb(12, 65, 10);
     cursor: pointer;
     font-size: 16px;
     color: #fff;
@@ -86,5 +88,5 @@ form button {
 }
 
 form button:hover {
-    background: #112062;
+    background: #294612;
 }
